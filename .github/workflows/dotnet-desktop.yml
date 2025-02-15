@@ -112,4 +112,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: WanganGarageManager
-        path: ${{ env.Wap_Project_Directory }}/bin/Release/*.exe
+        path: ${{ env.Wap_Project_Directory }}/bin/Release/*
