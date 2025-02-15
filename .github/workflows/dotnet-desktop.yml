@@ -58,7 +58,7 @@ jobs:
     env:
       Solution_Name: WanganGarageManager.sln                         # Replace with your solution name, i.e. MyWpfApp.sln.
       Test_Project_Path: WanganGarageManager/WanganGarageManager.csproj                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
-      Wap_Project_Directory: WanganGarageManager    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
+      Wap_Project_Directory: WanganGarageManager/release    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
       Wap_Project_Path: WanganGarageManager                   # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
 
     steps:
@@ -112,4 +112,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: MSIX Package
-        path: ${{ env.Wap_Project_Directory }}\
+        path: ${{ env.Wap_Project_Directory }}
