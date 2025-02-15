@@ -107,9 +107,12 @@ jobs:
     - name: Remove the pfx
       run: Remove-Item -path $env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
 
+    # 上传目录检查
+    - name: List build directory (Debug)
+      run: dir /s "${{ env.Wap_Project_Directory }}\"  # Windows
     # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
         name: app-release
-        path: ${{ env.Wap_Project_Directory }}\release\*.msix
+        path: ${{ env.Wap_Project_Directory }}/release/*.msix
