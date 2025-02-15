@@ -109,7 +109,7 @@ jobs:
 
     # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
     - name: Upload build artifacts
-       with:
+    
        # Name of the artifact to download.
        # If unspecified, all artifacts for the run are downloaded.
        # Optional.
