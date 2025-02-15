@@ -44,5 +44,4 @@ on:
   pull_request:
     branches: [ "master" ]
 
-jobs:
 run: dir /s "${{ env.PROJECT_DIR }}\
