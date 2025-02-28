@@ -35,7 +35,7 @@ namespace WanganGarageManager
             Localisation.InitEditor();
             CarDB.InitDB();
             lblCredit.Text = "Wangan Garage Manager\nVersion " + Application.ProductVersion.Split('.')[0];
-            cmbVer.SelectedIndex = 0;
+            cmbVer.SelectedIndex = 2;
             Localisation.UpdateMain(this, CultureInfo.InstalledUICulture.Name);
             menuSwitcher_SelectedIndexChanged(null, null);
         }
